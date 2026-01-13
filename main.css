@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #0b0d17;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.9) !important;
+    transition: 0.3s;
+}
+
+
+.hero-section {
+    padding: 140px 0 80px;
+    background: linear-gradient(135deg, #0b0d17 0%, #1a1e2e 100%);
+    color: white;
+    clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(13, 110, 253, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    bottom: -10px;
+    left: 0;
+}
+
+
+.project-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--card-bg);
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.badge-skill {
+    background-color: #e9ecef;
+    color: #0d6efd;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+.timeline-item {
+    padding: 20px;
+    border-left: 3px solid var(--primary-color);
+    position: relative;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background: #111;
+    color: #888;
+}
